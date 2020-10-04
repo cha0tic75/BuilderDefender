@@ -1,0 +1,55 @@
+TODO:
+
+- Each Tower gameobject needs to feed their arrow prefab a lifetime float.
+  This should be based on the radius that the tower can see as well as its fire rate.
+  
+
+- Add The day counter to the ui
+
+- Resource gathering is too quick
+- Perhaps scale the building cost on every x waves?
+
+- Add an indicator to towers so when a player is looking for a place to put them, it shows its attack range
+
+- When game ends, the resource gatherers should stop gathering, enemies should do some celebrating?
+  Basically there should be a gameover event that is fired when the gameover screen loads.
+  This should disable every component that isn't related to rendering.
+
+- Place enemy trail on top layer
+
+- Refactor repairButton logic so that each building type not only takes gold but may take other resources
+
+- Next raid should decrease every x raids
+
+- It would be cool to have the waves manager actually select a spawn transform that gets closer as the waves count increases.
+
+- Add the ability to switch between the different "Build" buttons by using the number keys.
+  IE Press 1 and the arrow is selected.  press 2 and the wood harvester is selected.
+
+- Add the ability to hold down the middle mouse button and drag to move the camera.
+  So if the button is down and they drag up, the camera moves as though W is pressed.
+
+- Add The ability to toggle the options menu by pressing the escape key
+
+- Implement an object pool system for enemies and arrows.  Instantiate more in blocks as needed.
+
+- Create some sort of system where resoure nodes can be depleted and die.  In order for this to work,
+  new resources should grow too.
+  
+- Create different types of enemies or have enemies increase in health every x raids
+
+- Create upgrade feature so that buildings can have their health increase and possibly
+  shoot faster or with stronger projectiles
+  
+  
+  
+
+
+IDEA:
+- Use this same system for some sort of space game where different planets have different resources.
+  This will require many different harvester types as well as resource types.
+  So the spaceship requires fuel to get to other planets.  Resouce gatherers require specific resources.
+  Each planet may have their own "Enemies" Indiginous people and there should be another faction that is
+  your main enemy.  They will blow up your resource gatherers 
+  
+  This will require a Main Menu scene, A ResourceManager Scene, a scene for each planet and a "galaxy" scene.
